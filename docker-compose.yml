@@ -6,3 +6,8 @@ services:
         container_name: apt
         ports:
             - 5000:5000
+        volumes:
+            - texlive-data:/usr/local/texlive  
+
+volumes:
+  texlive-data:
